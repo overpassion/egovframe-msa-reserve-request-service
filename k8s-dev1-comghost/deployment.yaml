@@ -33,6 +33,8 @@ spec:
           ports:
             - containerPort: 80
           env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "k8s"
             - name: SERVER_PORT
               value: "80"
             - name: APP_HOME
