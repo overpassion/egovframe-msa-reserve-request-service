@@ -40,16 +40,16 @@ spec:
                 configMapKeyRef:
                   name: common-configmap
                   key: APP_HOME
-            - name: EUREKA_INSTANCE_HOSTNAME
+            - name: EUREKA_URI
               valueFrom:
                 configMapKeyRef:
                   name: backend-configmap
-                  key: EUREKA_INSTANCE_HOSTNAME
-            - name: APIGATEWAY_HOSTNAME
+                  key: EUREKA_URI
+            - name: APIGATEWAY_URI
               valueFrom:
                 configMapKeyRef:
                   name: backend-configmap
-                  key: APIGATEWAY_HOSTNAME
+                  key: APIGATEWAY_URI
             - name: SPRING_CLOUD_CONFIG_URI
               valueFrom:
                 configMapKeyRef:
